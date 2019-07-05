@@ -16,6 +16,19 @@ class BaseViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func checkComingDataContent(text:Double?) -> String {
+        if let newTetxt = text {
+            return String(newTetxt)
+        }
+        return ""
+    }
+    
+    func checkComingDataContent(text:Int?) -> String {
+        if let newTetxt = text {
+            return String(newTetxt)
+        }
+        return ""
+    }
   
     
 
