@@ -91,11 +91,11 @@ class ViewController: BaseViewController,CLLocationManagerDelegate {
     
     func setData() {
         if let model = currentWeatherModel?.currently {
-            self.lblTemparature.text = String(model.temperature!) + "°"
-            self.lblSummary.text = String(model.summary!)
-            self.lblHumidity.text = String(model.humidity!) + "%"
-            self.lblRain.text = String(model.precipProbability!) + "%"
-            self.lblLocation.text = currentWeatherModel?.timezone!
+            self.lblTemparature.text = checkComingDataContent(text: model.temperature) + "°"
+            self.lblSummary.text = model.summary ?? ""
+            self.lblHumidity.text = checkComingDataContent(text: model.humidity) + "%"
+            self.lblRain.text = checkComingDataContent(text: model.precipProbability) + "%"
+            self.lblLocation.text = currentWeatherModel?.timezone ?? ""
         } else {
             SCLAlertView().showWarning("An error has occurred while data modelling", subTitle: "Warning")
         } 
