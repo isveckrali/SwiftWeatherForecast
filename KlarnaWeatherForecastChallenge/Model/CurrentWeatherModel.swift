@@ -20,8 +20,8 @@ struct Currently: Codable {
     var time:Int?
     var summary:String?
     var icon:String?
-    var precipIntensity:Int?
-    var precipProbability:Int?
+    var precipIntensity:Double?
+    var precipProbability:Double?
     var temperature:Double?
     var apparentTemperature:Double?
     var dewPoint:Double?
@@ -31,7 +31,7 @@ struct Currently: Codable {
     var windGust:Double?
     var windBearing:Double?
     var cloudCover:Double?
-    var uvIndex:Int?
+    var uvIndex:Double?
     var visibility:Double?
     var ozone:Double?
 }
