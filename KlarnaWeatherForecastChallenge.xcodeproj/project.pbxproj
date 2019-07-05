@@ -3,15 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1024769822CE598600B1C4D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1024769722CE598600B1C4D0 /* AppDelegate.swift */; };
 		1024769A22CE598600B1C4D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1024769922CE598600B1C4D0 /* ViewController.swift */; };
 		1024769D22CE598600B1C4D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1024769B22CE598600B1C4D0 /* Main.storyboard */; };
-		1024769F22CE598700B1C4D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1024769E22CE598700B1C4D0 /* Assets.xcassets */; };
 		102476A222CE598700B1C4D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 102476A022CE598700B1C4D0 /* LaunchScreen.storyboard */; };
+		104FACD722CE620A009C6316 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FACD622CE620A009C6316 /* Services.swift */; };
+		104FACD922CE6253009C6316 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FACD822CE6253009C6316 /* BaseViewController.swift */; };
+		104FACDC22CE65C5009C6316 /* CurrentWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FACDB22CE65C5009C6316 /* CurrentWeatherModel.swift */; };
+		104FACDE22CE68CB009C6316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 104FACDD22CE68CB009C6316 /* Assets.xcassets */; };
+		104FACE122CE6BBE009C6316 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FACE022CE6BBE009C6316 /* Reachability.swift */; };
+		9233EBCDA78A5E116B19CFDF /* Pods_KlarnaWeatherForecastChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC342E82D97A62BF4F665FC0 /* Pods_KlarnaWeatherForecastChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +24,16 @@
 		1024769722CE598600B1C4D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1024769922CE598600B1C4D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1024769C22CE598600B1C4D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1024769E22CE598700B1C4D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		102476A122CE598700B1C4D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		102476A322CE598700B1C4D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		104FACD622CE620A009C6316 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		104FACD822CE6253009C6316 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		104FACDB22CE65C5009C6316 /* CurrentWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherModel.swift; sourceTree = "<group>"; };
+		104FACDD22CE68CB009C6316 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		104FACE022CE6BBE009C6316 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		5CBDCF91BD09756C6A88C48B /* Pods-KlarnaWeatherForecastChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlarnaWeatherForecastChallenge.release.xcconfig"; path = "Target Support Files/Pods-KlarnaWeatherForecastChallenge/Pods-KlarnaWeatherForecastChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		A1863280921C670391A2816C /* Pods-KlarnaWeatherForecastChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlarnaWeatherForecastChallenge.debug.xcconfig"; path = "Target Support Files/Pods-KlarnaWeatherForecastChallenge/Pods-KlarnaWeatherForecastChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		BC342E82D97A62BF4F665FC0 /* Pods_KlarnaWeatherForecastChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KlarnaWeatherForecastChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9233EBCDA78A5E116B19CFDF /* Pods_KlarnaWeatherForecastChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,8 @@
 			children = (
 				1024769622CE598600B1C4D0 /* KlarnaWeatherForecastChallenge */,
 				1024769522CE598600B1C4D0 /* Products */,
+				2BC9A9103DF0D9448DB7734F /* Pods */,
+				C15FD8A05D9773D035F8DCAE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +69,123 @@
 		1024769622CE598600B1C4D0 /* KlarnaWeatherForecastChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				1024769722CE598600B1C4D0 /* AppDelegate.swift */,
-				1024769922CE598600B1C4D0 /* ViewController.swift */,
-				1024769B22CE598600B1C4D0 /* Main.storyboard */,
-				1024769E22CE598700B1C4D0 /* Assets.xcassets */,
-				102476A022CE598700B1C4D0 /* LaunchScreen.storyboard */,
+				104FACCF22CE6105009C6316 /* Controller */,
+				104FACCE22CE6100009C6316 /* View */,
+				104FACCD22CE60FB009C6316 /* Model */,
 				102476A322CE598700B1C4D0 /* Info.plist */,
+				104FACDD22CE68CB009C6316 /* Assets.xcassets */,
 			);
 			path = KlarnaWeatherForecastChallenge;
+			sourceTree = "<group>";
+		};
+		104FACCD22CE60FB009C6316 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				104FACDB22CE65C5009C6316 /* CurrentWeatherModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		104FACCE22CE6100009C6316 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				104FACD022CE6111009C6316 /* SplashScreen */,
+				104FACD122CE611B009C6316 /* MainScreen */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		104FACCF22CE6105009C6316 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				104FACDA22CE6258009C6316 /* BaseViewController */,
+				104FACD522CE61FC009C6316 /* Services */,
+				104FACD422CE6168009C6316 /* MainScreenController */,
+				104FACD222CE6151009C6316 /* CommonController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		104FACD022CE6111009C6316 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				102476A022CE598700B1C4D0 /* LaunchScreen.storyboard */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		104FACD122CE611B009C6316 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1024769B22CE598600B1C4D0 /* Main.storyboard */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		104FACD222CE6151009C6316 /* CommonController */ = {
+			isa = PBXGroup;
+			children = (
+				104FACDF22CE6B80009C6316 /* InternetConnection */,
+				104FACD322CE615C009C6316 /* AppDelegate */,
+			);
+			path = CommonController;
+			sourceTree = "<group>";
+		};
+		104FACD322CE615C009C6316 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1024769722CE598600B1C4D0 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		104FACD422CE6168009C6316 /* MainScreenController */ = {
+			isa = PBXGroup;
+			children = (
+				1024769922CE598600B1C4D0 /* ViewController.swift */,
+			);
+			path = MainScreenController;
+			sourceTree = "<group>";
+		};
+		104FACD522CE61FC009C6316 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				104FACD622CE620A009C6316 /* Services.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		104FACDA22CE6258009C6316 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				104FACD822CE6253009C6316 /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		104FACDF22CE6B80009C6316 /* InternetConnection */ = {
+			isa = PBXGroup;
+			children = (
+				104FACE022CE6BBE009C6316 /* Reachability.swift */,
+			);
+			path = InternetConnection;
+			sourceTree = "<group>";
+		};
+		2BC9A9103DF0D9448DB7734F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1863280921C670391A2816C /* Pods-KlarnaWeatherForecastChallenge.debug.xcconfig */,
+				5CBDCF91BD09756C6A88C48B /* Pods-KlarnaWeatherForecastChallenge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C15FD8A05D9773D035F8DCAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC342E82D97A62BF4F665FC0 /* Pods_KlarnaWeatherForecastChallenge.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 102476A622CE598700B1C4D0 /* Build configuration list for PBXNativeTarget "KlarnaWeatherForecastChallenge" */;
 			buildPhases = (
+				DD51E7A7A41841B56D34F56F /* [CP] Check Pods Manifest.lock */,
 				1024769022CE598600B1C4D0 /* Sources */,
 				1024769122CE598600B1C4D0 /* Frameworks */,
 				1024769222CE598600B1C4D0 /* Resources */,
+				8C2831654E7D7A27EB10A3CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +249,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				102476A222CE598700B1C4D0 /* LaunchScreen.storyboard in Resources */,
-				1024769F22CE598700B1C4D0 /* Assets.xcassets in Resources */,
+				104FACDE22CE68CB009C6316 /* Assets.xcassets in Resources */,
 				1024769D22CE598600B1C4D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C2831654E7D7A27EB10A3CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KlarnaWeatherForecastChallenge/Pods-KlarnaWeatherForecastChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KlarnaWeatherForecastChallenge/Pods-KlarnaWeatherForecastChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KlarnaWeatherForecastChallenge/Pods-KlarnaWeatherForecastChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD51E7A7A41841B56D34F56F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KlarnaWeatherForecastChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1024769022CE598600B1C4D0 /* Sources */ = {
@@ -136,6 +304,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1024769A22CE598600B1C4D0 /* ViewController.swift in Sources */,
+				104FACD922CE6253009C6316 /* BaseViewController.swift in Sources */,
+				104FACE122CE6BBE009C6316 /* Reachability.swift in Sources */,
+				104FACDC22CE65C5009C6316 /* CurrentWeatherModel.swift in Sources */,
+				104FACD722CE620A009C6316 /* Services.swift in Sources */,
 				1024769822CE598600B1C4D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +452,7 @@
 		};
 		102476A722CE598700B1C4D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1863280921C670391A2816C /* Pods-KlarnaWeatherForecastChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +470,7 @@
 		};
 		102476A822CE598700B1C4D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CBDCF91BD09756C6A88C48B /* Pods-KlarnaWeatherForecastChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

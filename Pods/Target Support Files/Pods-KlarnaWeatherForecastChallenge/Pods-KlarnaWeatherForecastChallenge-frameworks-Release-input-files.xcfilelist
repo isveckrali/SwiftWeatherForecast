@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-KlarnaWeatherForecastChallenge/Pods-KlarnaWeatherForecastChallenge-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework
