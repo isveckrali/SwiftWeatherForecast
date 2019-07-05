@@ -22,15 +22,6 @@ class BaseViewController: UIViewController {
         }
         return ""
     }
-    
-    func checkComingDataContent(text:Int?) -> String {
-        if let newTetxt = text {
-            return String(newTetxt)
-        }
-        return ""
-    }
-  
-    
 
     /*
     // MARK: - Navigation
