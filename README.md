@@ -8,6 +8,6 @@ MVC(Model-View-Controller) architectural pattern was used.
 <a href = "https://github.com/vikmeup/SCLAlertView-Swift" >SCLAlertView</a> is a beautiful animated Alert View.</br>
 <a href = "https://github.com/Alamofire/Alamofire">Alamofire</a> fetch data from server as JSON data type.</br>
 
-<h2>Screenshot</h2>
+<h2>Screen Gif</h2>
 
 ![alt text](screen.gif)
