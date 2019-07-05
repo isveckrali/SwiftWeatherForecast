@@ -17,8 +17,8 @@ class BaseViewController: UIViewController {
     }
     
     func checkComingDataContent(text:Double?) -> String {
-        if let newTetxt = text {
-            return String(newTetxt)
+        if let newText = text {
+            return String(newText)
         }
         return ""
     }
