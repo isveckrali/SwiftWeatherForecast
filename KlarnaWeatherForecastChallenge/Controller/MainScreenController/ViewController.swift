@@ -104,10 +104,10 @@ class ViewController: BaseViewController,CLLocationManagerDelegate {
     func getData(url:String){
         Alamofire.request(url).responseJSON { (dataResponse) in
          do {
+             self.activityIndicatorWhite.stopAnimating()
              if dataResponse.result.isSuccess {
                 self.currentWeatherModel = try JSONDecoder().decode(CurrentWeatherModel.self, from: dataResponse.data!)
                 self.setData()
-                self.activityIndicatorWhite.stopAnimating()
              } else {
                 SCLAlertView().showWarning("Please check your internet connection", subTitle: "Warning")
              }
