@@ -32,7 +32,7 @@ class ViewController: BaseViewController,CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
-        checkInterneConnectionAndLocationInformations()
+        checkInternetConnectionAndLocationInformations()
         // Do any additional setup after loading the view.
        
     }
@@ -80,7 +80,7 @@ class ViewController: BaseViewController,CLLocationManagerDelegate {
         }
     }
     
-    func checkInterneConnectionAndLocationInformations() {
+    func checkInternetConnectionAndLocationInformations() {
         if Reachability.isConnectedToNetwork(){
             locationManager.requestWhenInUseAuthorization()
         }else{
